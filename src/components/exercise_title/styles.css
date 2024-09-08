@@ -1,0 +1,26 @@
+.title_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F5F5F5;
+    height: 50px;
+}
+
+.exercise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #42A5F5;
+}
+
+.title {
+    display: flex;
+    flex: 1;
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}

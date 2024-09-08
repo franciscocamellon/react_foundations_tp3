@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    font-family: "Poppins", system-ui;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 10px;
+    gap: 15px;
+}

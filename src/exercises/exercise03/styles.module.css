@@ -1,0 +1,5 @@
+.greetings_container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
