@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { MdChecklist, MdDeleteForever, MdEdit } from "react-icons/md";
+import ChecklistIcon from "@mui/icons-material/Checklist";
+import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
+import EditIcon from "@mui/icons-material/Edit";
 import styles from "./styles.module.css";
 
 function TodoItem(props) {
@@ -50,20 +52,20 @@ function TodoItem(props) {
       )}
 
       <div className={styles.button_container}>
-        <MdChecklist
-          color="green"
-          size={25}
+        <ChecklistIcon
+          color="success"
+          fontSize="medium"
           cursor="pointer"
           onClick={() => props.onTaskCompleted(props.taskIndex)}
         />
-        <MdEdit
-          size={25}
+        <EditIcon
+          fontSize="medium"
           cursor="pointer"
           onClick={() => toggleEditing(props.taskIndex, props.tasks)}
         />
-        <MdDeleteForever
-          color="red"
-          size={25}
+        <DeleteForeverIcon
+          color="error"
+          fontSize="medium"
           cursor="pointer"
           onClick={() => props.onTaskDelete(props.taskIndex)}
         />
