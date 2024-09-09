@@ -13,6 +13,7 @@ function TodoList(props) {
             taskIndex={index}
             tasks={task}
             onTaskCompleted={props.onTaskCompleted}
+            onTaskEditing={props.onTaskEditing}
             onTaskDelete={props.onTaskDelete}
           />
         ))}

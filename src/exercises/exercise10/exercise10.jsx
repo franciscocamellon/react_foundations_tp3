@@ -20,7 +20,6 @@ const initialTaskList = [
 function Exercise10() {
   const [taskList, setTaskList] = useState([]);
   const [description, setDescription] = useState("");
-  const [isCompleted, setIsCompleted] = useState(false);
 
   function toggleComplete(taskId) {
     const filteredTask = [...taskList];
@@ -33,7 +32,7 @@ function Exercise10() {
   function saveTask(event) {
     event.preventDefault();
 
-    setTaskList([...taskList, description]);
+    setTaskList([...taskList, { description, isCompleted: false }]);
 
     setDescription("");
   }
@@ -68,7 +67,6 @@ function Exercise10() {
 
       <TodoList
         taskList={taskList}
-        isCompleted={isCompleted}
         onTaskCompleted={toggleComplete}
         onTaskDelete={handleTaskDelete}
       />
