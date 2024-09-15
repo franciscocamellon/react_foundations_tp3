@@ -10,9 +10,11 @@ function TodoItem(props) {
 
   return (
     <div key={props.index} className={styles.item_card}>
-      <span className={isCompleted ? styles.completed : ""}>
-        {props.taskDescription}
-      </span>
+      <div className={styles.span_card}>
+        <span className={isCompleted ? styles.completed : ""}>
+          {props.taskDescription}
+        </span>
+      </div>
       <button onClick={handleComplete}>Concluir</button>
     </div>
   );
